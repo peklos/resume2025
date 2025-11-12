@@ -238,6 +238,7 @@ p {
     gap: 5px;
     cursor: pointer;
     z-index: 1001;
+    padding: 5px;
 }
 
 .burger span {
@@ -248,17 +249,18 @@ p {
     transition: all var(--transition-base);
 }
 
-/* Burger Animation */
+/* Burger Animation - улучшенный крестик */
 .burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger.active span:nth-child(2) {
     opacity: 0;
+    transform: translateX(-10px);
 }
 
 .burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* ===== Hero Section ===== */
@@ -327,11 +329,13 @@ p {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: var(--spacing-lg);
+    justify-content: center;
 }
 
 .hero-socials {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .social-link {
@@ -433,12 +437,7 @@ p {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Центрируем последнюю карточку, если она одна в ряду */
-.skill-card:last-child:nth-child(4) {
-    grid-column: 1 / -1;
-    margin: 0 auto;
+    justify-items: center;
 }
 
 .skill-card {
@@ -454,9 +453,8 @@ p {
 }
 
 /* Центрируем последнюю карточку, если она одна в ряду */
-.skill-card:last-child:nth-child(4) {
+.skill-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
-    margin: 0 auto;
 }
 
 .skill-card:hover {
@@ -572,9 +570,8 @@ p {
 }
 
 /* Центрируем последнюю карточку, если она одна в ряду */
-.project-card:last-child:nth-child(4) {
+.project-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
-    margin: 0 auto;
 }
 
 .project-card:hover {
@@ -712,9 +709,8 @@ p {
 }
 
 /* Центрируем последнюю карточку, если она одна в ряду */
-.contact-card:last-child:nth-child(4) {
+.contact-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
-    margin: 0 auto;
 }
 
 .contact-card:hover {
@@ -897,6 +893,10 @@ p {
     .hero-buttons {
         justify-content: flex-start;
     }
+    
+    .hero-socials {
+        justify-content: flex-start;
+    }
 }
 
 /* Desktop (>= 1024px) */
@@ -970,6 +970,10 @@ p {
     }
 
     .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
         grid-template-columns: 1fr;
     }
 }
