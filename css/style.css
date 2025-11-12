@@ -452,9 +452,10 @@ p {
     max-width: 280px;
 }
 
-/* Центрируем последнюю карточку, если она одна в ряду */
-.skill-card:last-child:nth-child(odd) {
+/* Центрируем последнюю карточку, если их 4 */
+.skill-card:last-child:nth-child(4) {
     grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .skill-card:hover {
@@ -569,9 +570,10 @@ p {
     max-width: 450px;
 }
 
-/* Центрируем последнюю карточку, если она одна в ряду */
-.project-card:last-child:nth-child(odd) {
+/* Центрируем последнюю карточку, если их 4 */
+.project-card:last-child:nth-child(4) {
     grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .project-card:hover {
@@ -708,9 +710,10 @@ p {
     max-width: 280px;
 }
 
-/* Центрируем последнюю карточку, если она одна в ряду */
-.contact-card:last-child:nth-child(odd) {
+/* Центрируем последнюю карточку, если их 4 */
+.contact-card:last-child:nth-child(4) {
     grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .contact-card:hover {
