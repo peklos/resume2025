@@ -394,6 +394,12 @@ p {
     animation: bounce 2s infinite;
 }
 
+@media (max-width: 1024px) {
+    .scroll-indicator {
+        display: none !important;
+    }
+}
+
 .mouse {
     width: 24px;
     height: 40px;
@@ -939,11 +945,6 @@ p {
 
     .nav-links.active {
         right: 0;
-    }
-    
-    /* Скрываем scroll indicator на мобильных */
-    .scroll-indicator {
-        display: none;
     }
 
     .hero-content {
