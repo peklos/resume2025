@@ -940,6 +940,11 @@ p {
     .nav-links.active {
         right: 0;
     }
+    
+    /* Скрываем scroll indicator на мобильных */
+    .scroll-indicator {
+        display: none;
+    }
 
     .hero-content {
         grid-template-columns: 1fr;
