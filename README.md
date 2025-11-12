@@ -84,5 +84,3 @@ python3 -m http.server 8000
 - GitHub: [@peklos](https://github.com/peklos)
 
 ---
-
-<p align="center">Сделано с ❤️ и Claude Code</p>
