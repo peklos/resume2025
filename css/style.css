@@ -336,6 +336,8 @@ p {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
 }
 
 .social-link {
