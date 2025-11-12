@@ -453,6 +453,12 @@ p {
     max-width: 280px;
 }
 
+/* Центрируем последнюю карточку, если она одна в ряду */
+.skill-card:last-child:nth-child(4) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+}
+
 .skill-card:hover {
     transform: translateY(-8px) rotate(2deg);
     box-shadow: var(--shadow-colored);
@@ -563,6 +569,12 @@ p {
     border: 1px solid var(--gray-light);
     width: 100%;
     max-width: 450px;
+}
+
+/* Центрируем последнюю карточку, если она одна в ряду */
+.project-card:last-child:nth-child(4) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
 }
 
 .project-card:hover {
@@ -697,6 +709,12 @@ p {
     border: 1px solid var(--gray-light);
     width: 100%;
     max-width: 280px;
+}
+
+/* Центрируем последнюю карточку, если она одна в ряду */
+.contact-card:last-child:nth-child(4) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
 }
 
 .contact-card:hover {
