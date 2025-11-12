@@ -156,10 +156,13 @@ function createRipple(event) {
     }, 600);
 }
 
-// Add ripple to all buttons
+// Add ripple to all buttons (except download buttons)
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach(button => {
-    button.addEventListener('click', createRipple);
+    // Skip download buttons to avoid visual glitches
+    if (!button.hasAttribute('download')) {
+        button.addEventListener('click', createRipple);
+    }
 });
 
 // ===== Add Tilt Effect to Project Cards =====
@@ -230,7 +233,7 @@ emailLinks.forEach(link => {
 
         // Copy to clipboard
         navigator.clipboard.writeText(email).catch(err => {
-            console.log('Clipboard API not available');
+            // Clipboard API not available - silently fail
         });
 
         // Remove tooltip after 2 seconds
@@ -315,18 +318,19 @@ function debounce(func, wait = 10, immediate = false) {
 }
 
 // ===== Console Message for Developers =====
-console.log(
-    '%c👋 Привет, разработчик!',
-    'color: #3B82F6; font-size: 20px; font-weight: bold;'
-);
-console.log(
-    '%cЕсли ты читаешь это, значит мы можем стать друзьями! 😄',
-    'color: #8B5CF6; font-size: 14px;'
-);
-console.log(
-    '%cСвяжись со мной: vladpashechko@mail.ru',
-    'color: #6B7280; font-size: 12px;'
-);
+// Disabled to keep console clean
+// console.log(
+//     '%c👋 Привет, разработчик!',
+//     'color: #3B82F6; font-size: 20px; font-weight: bold;'
+// );
+// console.log(
+//     '%cЕсли ты читаешь это, значит мы можем стать друзьями! 😄',
+//     'color: #8B5CF6; font-size: 14px;'
+// );
+// console.log(
+//     '%cСвяжись со мной: vladpashechko@mail.ru',
+//     'color: #6B7280; font-size: 12px;'
+// );
 
 // ===== Protect Against Console Spam in Production =====
 if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
