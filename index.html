@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Владислав Пашечко - Fullstack разработчик</title>
+    <meta name="description" content="Fullstack-разработчик с опытом в Vue.js, React, Python. Создаю современные веб-приложения и Telegram-ботов.">
+    <meta name="keywords" content="fullstack разработчик, веб-разработчик, vue.js, react, python, фриланс">
+    <meta name="author" content="Владислав Пашечко">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Владислав Пашечко - Fullstack разработчик">
+    <meta property="og:description" content="Fullstack-разработчик с опытом в Vue.js, React, Python">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="gradient-text">VP</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Привет, я <span class="gradient-text">Владислав</span>
+                    </h1>
+                    <p class="hero-subtitle">Fullstack разработчик</p>
+                    <p class="hero-description">
+                        Создаю современные веб-приложения с использованием Vue, React и Python.
+                        Превращаю идеи в работающие продукты.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Связаться со мной
+                        </a>
+                        <a href="assets/resume/Резюме_Пашечко_Владислав_Fullstack.docx" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            Скачать резюме
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/peklos" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/swslt1616" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:vladpashechko@mail.ru" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="gradient-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">О себе</h2>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        Fullstack-разработчик с опытом создания веб-приложений и Telegram-ботов.
+                        Занимаюсь веб-разработкой с сентября 2023 года, в коммерческой разработке - около года.
+                        Самостоятельно изучил современные технологии и фреймворки, применяю их для создания
+                        функциональных и удобных приложений.
+                    </p>
+                    <p>
+                        Эффективно использую современные инструменты разработки для ускорения работы и решения задач.
+                        Студент 3 курса СПО по специальности "Программист".
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Vue.js, React, TypeScript для создания современных интерфейсов</p>
+                    </div>
+
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Python, FastAPI, PostgreSQL для надежной серверной логики</p>
+                    </div>
+
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                        <p>Git, Vite, REST API для эффективной разработки</p>
+                    </div>
+
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Быстрое обучение</h3>
+                        <p>Готов адаптироваться к новым технологиям и задачам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Технические навыки</h2>
+
+            <div class="skills-categories">
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Pinia</span>
+                        <span class="tag">Redux</span>
+                        <span class="tag">Vue Router</span>
+                        <span class="tag">React Router</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">Axios</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-database"></i> Backend</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Aiogram</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-cogs"></i> Инструменты</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">AI Integration</span>
+                        <span class="tag">Deployment</span>
+                        <span class="tag">jQuery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Ключевые проекты</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1: YoriShop -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/images/projects/yorishop.png" alt="YoriShop - Интернет-магазин" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>YoriShop</h3>
+                                <p>MVP интернет-магазина одежды с каталогом, корзиной и оформлением заказа</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Vue.js</span>
+                                    <span class="tech-badge">Pinia</span>
+                                    <span class="tech-badge">Tailwind</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://peklos.github.io/YoriShop" target="_blank" rel="noopener" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/peklos/YoriShop" target="_blank" rel="noopener" class="project-link">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: NextBank -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/images/projects/nextbank.png" alt="NextBank - Банковская система" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>NextBank</h3>
+                                <p>MVP банковской системы с регистрацией, управлением счетами и админ-панелью</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Redux</span>
+                                    <span class="tech-badge">FastAPI</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/peklos/NextBank" target="_blank" rel="noopener" class="project-link">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: CarShareX -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/images/projects/carsharex.png" alt="CarShareX - Каршеринг" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>CarShareX</h3>
+                                <p>MVP сервиса каршеринга с картой, бронированием и админ-панелью</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">TypeScript</span>
+                                    <span class="tech-badge">FastAPI</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/peklos/CarShareX" target="_blank" rel="noopener" class="project-link">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: WoodenDot -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="assets/images/projects/woodendot.png" alt="WoodenDot - Landing Page" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>WoodenDot</h3>
+                                <p>Landing Page на заказ с кастомной версткой и интерактивными элементами</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">Vanilla JS</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/peklos/WoodenDot" target="_blank" rel="noopener" class="project-link">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Связаться со мной</h2>
+            <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Открыт к предложениям о работе и интересным проектам
+            </p>
+
+            <div class="contact-methods">
+                <a href="mailto:vladpashechko@mail.ru" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>vladpashechko@mail.ru</p>
+                </a>
+
+                <a href="https://t.me/swslt1616" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>@swslt1616</p>
+                </a>
+
+                <a href="https://github.com/peklos" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>github.com/peklos</p>
+                </a>
+
+                <a href="tel:+79003703668" class="contact-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p>+7 900 370 36 68</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Владислав Пашечко. Все права защищены.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/peklos" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/swslt1616" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:vladpashechko@mail.ru">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#hero" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
